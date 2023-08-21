@@ -26,8 +26,11 @@ Check out the sources for further explanations.
 The project supports two different policies for the connection with the Proxy Adapters on the Server.
 The normal connection policy, as also depicted in the architecture diagram above, consists in the Remote Server connecting to a listening TCP port opened by the Proxy Adapter.
 Another available policy is to invert the roles and have the Remote Server open a listening TCP port and the Proxy Adapter connect to it.
+
 The two options are implemented by the `ServerStarter` class and can be chosen via a command line argument, which affects both the Data Adapter and the Metadata Adapter connections.
 Obviously, each option can be chosen only provided that the Proxy Adapters on the Server are configured accordingly.
+
+For an example more focused on leveraging the connection inversion policy, see the [Lightstreamer - Stock-List Cluster Demo - Java Remote Adapter](https://github.com/Lightstreamer/Lightstreamer-example-StockList-adapter-java-remote-cluster).
 
 ## Install
 
@@ -221,6 +224,7 @@ for the connection inversion option).
 * [Lightstreamer Java Remote Adapter SDK](https://github.com/Lightstreamer/Lightstreamer-lib-adapter-java-remote)
 * [LiteralBasedProvider Metadata Adapter](https://github.com/Lightstreamer/Lightstreamer-lib-adapter-java-remote#literalbasedprovider-metadata-adapter)
 * [Lightstreamer - Stock-List Demo - Java Adapter](https://github.com/Lightstreamer/Lightstreamer-example-StockList-adapter-java)
+* [Lightstreamer - Stock-List Cluster Demo - Java Remote Adapter](https://github.com/Lightstreamer/Lightstreamer-example-StockList-adapter-java-remote-cluster)
 
 ## Lightstreamer Compatibility Notes
 
